@@ -6,9 +6,9 @@
 
 A web-based waste pickup management platform with:
 
-- User roles: Regular User & Admin
-- Core modules: Login, Register, Pickup Request Form, Feedback, Dashboard, Admin Panel, Awareness Page
-- Technologies: HTML, CSS, JavaScript, LocalStorage (for mock data persistence)
+- **User roles**: Regular User & Admin
+- **Core modules**: Login, Register, Pickup Request Form, Feedback, Dashboard, Admin Panel, Awareness Page
+- **Technologies**: HTML, CSS, JavaScript, LocalStorage (for mock data persistence)
 
 ## 2. Tools & Technologies Used
 
