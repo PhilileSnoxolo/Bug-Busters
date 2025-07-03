@@ -7,14 +7,14 @@ echo ==================================================
 REM Check if Node.js is installed
 node --version >nul 2>&1
 if %errorlevel% neq 0 (
-    echo ❌ Node.js is not installed. Please install Node.js first.
+    echo  Node.js is not installed. Please install Node.js first.
     echo Visit: https://nodejs.org/
     pause
     exit /b 1
 )
 
-echo ✅ Node.js is installed
-echo ✅ npm is available
+echo  Node.js is installed
+echo  npm is available
 
 REM Install project dependencies
 echo 📦 Installing project dependencies...
