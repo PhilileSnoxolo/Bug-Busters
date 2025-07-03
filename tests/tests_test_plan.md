@@ -42,10 +42,10 @@ A web-based waste pickup management platform with:
 
 ## 4. Test Plan Objectives
 
-- **Form Validations** - Ensure all form validations are working
-- **User Role Access** - Ensure user role access behaves as expected (user/admin)
-- **Data Storage and Retrieval** - Confirm storage and retrieval of data (localStorage)
-- **UI Responsiveness and Correctness** - Validate UI responsiveness and correctness
+- Ensure all form validations are working
+- Ensure user role access behaves as expected (user/admin)
+- Confirm storage and retrieval of data (localStorage)
+- Validate UI responsiveness and correctness
 
 ## 5. Test Suites Overview
 
