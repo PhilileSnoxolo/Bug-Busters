@@ -1,0 +1,25 @@
+Bug ID,Summary,Description,Module,Severity,Status,Steps to Reproduce,Expected Result,Actual Result
+BUG-001,Eldoret filter shows Nairobi data,Filter for Eldoret returns wrong city results,Dashboard Filter,Major,Open,"1. Log in as any user
+2. Go to dashboard
+3. Filter by 'Eldoret'",Only Eldoret requests appear,Nairobi requests shown
+BUG-002,Plain text password in localStorage,Passwords stored insecurely in browser,Auth (Login/Register),Critical,Open,"1. Register or log in
+2. Open DevTools > Application > localStorage",Passwords hashed or not stored,Plain text visible
+BUG-003,Preferred date missing validation,Pickup form accepts blank preferred date,Pickup Form,Minor,Open,"1. Open Pickup form
+2. Leave preferred date blank
+3. Submit",Error message for missing date,"""Not specified"" saved"
+BUG-004,Feedback accepts blank comments,No validation for empty comment field,Feedback Form,Minor,Open,"1. Open Feedback form
+2. Enter request ID & reason
+3. Leave comment empty",Require comment input,Submits with no comment
+BUG-005,Name accepts 1-letter input,Weak name validation allows short entries,Register/Pickup,Medium,Open,"1. Enter name as 'A'
+2. Submit form",Error for short name,Accepted without issue
+BUG-006,Logout doesn't fully clear session,User still appears logged in after logout,Auth,Medium,Fixed,"1. Login
+2. Logout
+3. Refresh page",User fully logged out,Session persists
+BUG-007,Admin access bypass,Non-admin can access admin view via URL,Admin Panel,Critical,Open,"1. Login as user
+2. Visit /admin manually",Redirect to login,Admin panel loads
+BUG-008,Empty login fields silent fail,No feedback on blank credentials,Login Form,Medium,Open,"1. Leave email/password empty
+2. Click login",Error message for empty fields,No feedback shown
+BUG-009,Table not responsive on mobile,Dashboard table overflows small screens,Dashboard UI,Minor,Open,"1. Use screen < 480px
+2. View request table",Table resizes or scrolls,Overflow visible
+BUG-010,Form resets on validation error,User data lost when validation fails,Pickup Form,Minor,Open,"1. Leave required field blank
+2. Submit",Retain form values,Form clears all fields
